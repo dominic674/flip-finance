@@ -35,7 +35,7 @@ src/
 
 ## Environment Variables
 - `PORT` — Server port (default 3000)
-- `GHL_WEBHOOK_URL` — GoHighLevel webhook for contact form
+- `GHL_APPLY_WEBHOOK_URL` — GoHighLevel webhook for contact form
 - `GHL_FINANCING_WEBHOOK_URL` — GoHighLevel webhook for financing applications
 - `VITE_MAIN_SITE_URL` — URL for "Back to Main Site" links
 

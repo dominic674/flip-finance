@@ -60,8 +60,8 @@ export default function TermsOfUse() {
       <p>
         <strong>Flip Finance Co</strong><br />
         Phone: (720) 271-6600<br />
-        Email: [Business Email Address]<br />
-        Address: [Business Address]
+        Email: info@flipfinance.com<br />
+        Address: 7435 E Peakview Ave building 10 centennial, CO 80111
       </p>
     </LegalLayout>
   );

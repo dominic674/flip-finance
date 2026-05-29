@@ -13,12 +13,21 @@ function SubmitPropertyModal({ onClose }) {
     property_type: '',
     timeline: '',
     message: '',
+    sms_consent: false,
+    terms_consent: false,
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+    setForm({ ...form, [e.target.name]: value });
+  };
+
+  const goTo = (path) => (e) => {
+    e.preventDefault();
+    onClose?.();
+    window.location.href = path;
   };
 
   const handleSubmit = async (e) => {
@@ -138,6 +147,33 @@ function SubmitPropertyModal({ onClose }) {
                 onChange={handleChange}
                 rows={3}
               />
+              <label className="modal__consent">
+                <input
+                  type="checkbox"
+                  name="sms_consent"
+                  checked={form.sms_consent}
+                  onChange={handleChange}
+                  required
+                />
+                <span>
+                  I consent to receive SMS messages from Flip Finance Co related to my inquiry, follow-ups, appointment coordination, and property-related updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance. Consent is not a condition of purchase.
+                </span>
+              </label>
+              <label className="modal__consent">
+                <input
+                  type="checkbox"
+                  name="terms_consent"
+                  checked={form.terms_consent}
+                  onChange={handleChange}
+                  required
+                />
+                <span>
+                  By checking this box, I acknowledge that I have read and agree to the{' '}
+                  <a href="/terms-of-use" onClick={goTo('/terms-of-use')}>Terms of Use</a>{' '}
+                  and{' '}
+                  <a href="/privacy-policy" onClick={goTo('/privacy-policy')}>Privacy Policy</a>.
+                </span>
+              </label>
               <button type="submit" className="btn" disabled={loading}>
                 {loading ? 'Submitting...' : 'Fund a Project'}
               </button>

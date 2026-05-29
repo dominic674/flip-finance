@@ -36,6 +36,18 @@ app.post('/api/apply', (req, res) => {
   res.json({ success: true });
 });
 
+app.post('/api/submit-property', (req, res) => {
+  const webhookUrl = process.env.GHL_FINANCING_WEBHOOK_URL;
+  if (webhookUrl) {
+    fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(req.body),
+    }).catch(err => console.error('GHL submit-property webhook error:', err));
+  }
+  res.json({ success: true });
+});
+
 // Serve static files in production
 app.use(express.static(path.join(__dirname, 'dist')));
 app.get('/{*splat}', (req, res) => {

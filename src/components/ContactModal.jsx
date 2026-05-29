@@ -12,6 +12,7 @@ function ApplyModal({ onClose }) {
     estimated_budget: '',
     message: '',
     sms_consent: false,
+    terms_consent: false,
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -125,10 +126,22 @@ function ApplyModal({ onClose }) {
                   required
                 />
                 <span>
-                  By checking this box, I agree to receive SMS messages from Flip Finance Co regarding my inquiry and services. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance. See our{' '}
-                  <a href="/privacy-policy" onClick={goTo('/privacy-policy')}>Privacy Policy</a>{' '}
+                  I consent to receive SMS messages from Flip Finance Co related to my inquiry, follow-ups, appointment coordination, and property-related updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance. Consent is not a condition of purchase.
+                </span>
+              </label>
+              <label className="modal__consent">
+                <input
+                  type="checkbox"
+                  name="terms_consent"
+                  checked={form.terms_consent}
+                  onChange={handleChange}
+                  required
+                />
+                <span>
+                  By checking this box, I acknowledge that I have read and agree to the{' '}
+                  <a href="/terms-of-use" onClick={goTo('/terms-of-use')}>Terms of Use</a>{' '}
                   and{' '}
-                  <a href="/terms-of-use" onClick={goTo('/terms-of-use')}>Terms of Use</a>.
+                  <a href="/privacy-policy" onClick={goTo('/privacy-policy')}>Privacy Policy</a>.
                 </span>
               </label>
               <button type="submit" className="btn" disabled={loading}>
