@@ -42,10 +42,10 @@ export default function TermsOfUse() {
         Carriers are not liable for delayed or undelivered messages.
 
         You must be 18 years of age or older to use this SMS service.
-        <p>
-          Your use of our SMS service is also subject to our Privacy Policy, which can be found here:
-          <a href="https://www.flipfinanceco.com/privacy-policy">https://www.flipfinanceco.com/privacy-policy</a>
-          </p>
+      </p>
+      <p>
+        Your use of our SMS service is also subject to our Privacy Policy, which can be found here:
+        <a href="https://www.flipfinanceco.com/privacy-policy">https://www.flipfinanceco.com/privacy-policy</a>
       </p>
 
       <h2>7. Third-Party Links</h2>
