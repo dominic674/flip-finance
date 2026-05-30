@@ -35,8 +35,6 @@ export default function TermsOfUse() {
 
       <h2>6. SMS Terms</h2>
       <p>
-        SMS Terms
-
         By opting in to receive text messages from Flip Finance LLC, you agree to receive SMS messages related to your loan inquiry, application, account updates, reminders, and related services. Message frequency may vary. Message and data rates may apply.
 
         You may opt out at any time by replying STOP. For assistance, reply HELP.
@@ -44,9 +42,10 @@ export default function TermsOfUse() {
         Carriers are not liable for delayed or undelivered messages.
 
         You must be 18 years of age or older to use this SMS service.
-
-        Your use of our SMS service is also subject to our Privacy Policy, which can be found here:
-        <a href="https://www.flipfinanceco.com/privacy-policy">https://www.flipfinanceco.com/privacy-policy</a>
+        <p>
+          Your use of our SMS service is also subject to our Privacy Policy, which can be found here:
+          <a href="https://www.flipfinanceco.com/privacy-policy">https://www.flipfinanceco.com/privacy-policy</a>
+          </p>
       </p>
 
       <h2>7. Third-Party Links</h2>
