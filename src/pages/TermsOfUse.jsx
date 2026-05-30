@@ -44,7 +44,7 @@ export default function TermsOfUse() {
         You must be 18 years of age or older to use this SMS service.
       </p>
       <p>
-        Your use of our SMS service is also subject to our Privacy Policy, which can be found here:
+        Your use of our SMS service is also subject to our Privacy Policy, which can be found here: 
         <a href="https://www.flipfinanceco.com/privacy-policy">https://www.flipfinanceco.com/privacy-policy</a>
       </p>
 
