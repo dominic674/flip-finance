@@ -153,10 +153,9 @@ function SubmitPropertyModal({ onClose }) {
                   name="sms_consent"
                   checked={form.sms_consent}
                   onChange={handleChange}
-                  required
                 />
                 <span>
-                  I consent to receive SMS messages from Flip Finance Co related to my inquiry, follow-ups, appointment coordination, and property-related updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance. Consent is not a condition of purchase.
+                  By checking this box, I consent to receive text messages from Flip Finance LLC regarding my inquiry, application, account updates, and related services. Message and data rates may apply. Message frequency may vary. Reply STOP to unsubscribe or HELP for assistance.
                 </span>
               </label>
               <label className="modal__consent">
