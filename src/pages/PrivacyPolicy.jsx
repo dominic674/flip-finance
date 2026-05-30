@@ -2,10 +2,10 @@ import LegalLayout from './LegalLayout';
 
 export default function PrivacyPolicy() {
   return (
-    <LegalLayout title="Privacy Policy" lastUpdated="May 13, 2026">
+    <LegalLayout title="Privacy Policy" lastUpdated="May 28, 2026">
       <h2>1. Introduction</h2>
       <p>
-        Flip Finance Co (&ldquo;Company,&rdquo; &ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or submit your information through our forms.
+        Flip Finance LLC (&ldquo;Company,&rdquo; &ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or submit your information through our forms.
       </p>
       <p>By using our website, you agree to the terms outlined in this Privacy Policy.</p>
 
@@ -25,6 +25,13 @@ export default function PrivacyPolicy() {
         <li>Device information</li>
         <li>Website usage data</li>
       </ul>
+      <h3>Cookies, Tracking Technologies, and Analytics</h3>
+      <p>
+        We may use cookies, tracking technologies, pixels, and analytics tools to understand how visitors interact with our website, improve website performance, measure marketing effectiveness, and enhance the user experience. These technologies may collect information such as browser type, device information, pages visited, time spent on the site, referring pages, and general usage activity.
+      </p>
+      <p>
+        You may be able to disable cookies through your browser settings; however, some website features may not function properly if cookies are disabled.
+      </p>
 
       <h2>3. How We Use Your Information</h2>
       <p>We use the information collected to:</p>
@@ -37,7 +44,7 @@ export default function PrivacyPolicy() {
 
       <h2>4. SMS Communications</h2>
       <p>
-        By providing your phone number, you consent to receive SMS (text) messages from Flip Finance Co related to your inquiry, services, or account.
+        By providing your phone number, you consent to receive SMS (text) messages from Flip Finance LLC related to your inquiry, services, or account.
       </p>
       <ul>
         <li>Message frequency may vary</li>
@@ -85,7 +92,7 @@ export default function PrivacyPolicy() {
       <h2>10. Contact Information</h2>
       <p>If you have any questions about this Privacy Policy, please contact us:</p>
       <p>
-        <strong>Flip Finance Co</strong><br />
+        <strong>Flip Finance LLC</strong><br />
         Phone: (720) 271-6600<br />
         Email: info@flipfinance.com<br />
         Address: 7435 E Peakview Ave building 10 centennial, CO 80111

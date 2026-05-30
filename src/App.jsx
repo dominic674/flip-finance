@@ -192,7 +192,7 @@ function HomePage() {
             Terms of Use
           </a>
         </nav>
-        <p className="footer__copy">&copy; {new Date().getFullYear()} Flip Finance Co. All rights reserved.</p>
+        <p className="footer__copy">&copy; {new Date().getFullYear()} Flip Finance LLC All rights reserved.</p>
       </footer>
 
       {showApply && <ApplyModal onClose={() => setShowApply(false)} />}

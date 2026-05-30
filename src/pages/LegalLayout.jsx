@@ -31,7 +31,7 @@ export default function LegalLayout({ title, lastUpdated, children }) {
         >
           &larr; Back to Home
         </a>
-        <p>&copy; {new Date().getFullYear()} Flip Finance Co. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Flip Finance LLC All rights reserved.</p>
       </footer>
     </div>
   );
